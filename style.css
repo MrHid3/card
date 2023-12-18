@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
     color: white;
+    text-wrap: nowrap;
 }
 
 body{
@@ -70,6 +71,12 @@ nav{
     display: flex;
     flex-direction: column;
     animation: navRollin 1s ease-out;
+    transition-duration: 1s;
+}
+
+nav:hover{
+    box-shadow: 4px 4px 4px rgba(20, 20, 20, 20%);
+    transform: scale(1.05);
 }
 
 a{
@@ -108,5 +115,15 @@ a:hover{
     }
     to{
         background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        display: block;
+    }
+    .box{
+        margin-right: 0;
+        width: fit-content;
     }
 }
