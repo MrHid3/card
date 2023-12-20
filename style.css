@@ -76,7 +76,6 @@ nav{
 
 nav:hover{
     box-shadow: 4px 4px 4px rgba(20, 20, 20, 20%);
-    transform: scale(1.05);
 }
 
 a{
@@ -127,3 +126,4 @@ a:hover{
         width: fit-content;
     }
 }
+
